@@ -1,0 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.navBar { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin: 0px 10px
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.mensajeBienvenida {
+  margin: 50px;
+  }
+
+  .textoMensajeBienvenida {
+    color: brown;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
