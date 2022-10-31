@@ -27,12 +27,28 @@ a {
   color: black;
 }
 
-.mensajeBienvenida {
-  margin: 50px;
-  }
 
-  .textoMensajeBienvenida {
-    color: brown;
-    font-size: 1.5rem;
-    font-weight: 900;
-  }
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+main {
+  min-height: 80vh;
+  margin: 20px;
+}
+
+.itemList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin: 38px 14px 14px 14px;
+  border-radius: 7px;
+  padding: 5px;
+}
