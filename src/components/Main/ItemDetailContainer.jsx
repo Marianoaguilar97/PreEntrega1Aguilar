@@ -1,5 +1,5 @@
 import React from 'react'
-import { products } from '../../mock/productos';
+import { getProduct } from '../../mock/productos';
 import { useState, useEffect } from 'react';
 import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
@@ -11,19 +11,12 @@ const ItemDetailContainer = () => {
   
   useEffect(() => {
     
-    const getProduct = () => {
-        return new Promise((res) => {
-           const product = products.find((product) => product.id === 1)
-            setTimeout(() => {
-                res(product);
-            }, 2000);
-        });
-      };
-      getProduct()
+    
+      getProduct(idProd)
       .then((res) => {
           setItem(res);
       })
-}, []);
+}, [idProd]);
       
   return (
     <div className='contenedor'>

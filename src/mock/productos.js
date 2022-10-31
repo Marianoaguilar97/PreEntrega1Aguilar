@@ -55,6 +55,15 @@ export const getProducts = (categoryName) => {
      const ref = categoryName ? prodFiltrados :products;
      setTimeout(() => {
            res(ref);
-       }, 500);
+       }, 2000);
    });
  };
+
+ export const getProduct = (idProd) => {
+    return new Promise((res) => {
+       const product = products.find((prod) => prod.id === parseInt(idProd))
+        setTimeout(() => {
+            res(product);
+        }, 2000);
+    });
+  };
