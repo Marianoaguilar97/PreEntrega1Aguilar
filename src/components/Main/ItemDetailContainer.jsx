@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
 }, [idProd]);
       
   return (
-    <div className='contenedor'>
+    <div className='contenedorDetalle'>
         <ItemDetail item={item}/>
     </div>
   )

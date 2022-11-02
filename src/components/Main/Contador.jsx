@@ -23,14 +23,7 @@ const Contador = ({ stock, onAdd }) => {
     const agregar = () => onAdd(cantidad);
 
     return (
-        <div
-            style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                minHeight: '80vh',
-            }}
-        >
+        <div className='contador'>
             <button onClick={restar}>-</button>
             <p>{cantidad}</p>
             <button disabled={cantidad === stock} onClick={sumar}>

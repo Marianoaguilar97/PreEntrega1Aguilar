@@ -6,9 +6,9 @@ const ItemDetail = ({item}) => {
     
     const onAdd = (qty) => console.log(qty);
     return (
-        <div>
-            <img src={item.img} width="200px" alt={item.title} />
-            <div>
+        <div className='detalle'>
+            <img src={item.img} alt={item.title} />
+            <div className='detalleContenido'>
                 <h2>{item.title}</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
