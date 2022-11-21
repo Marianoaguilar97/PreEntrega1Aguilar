@@ -16,10 +16,6 @@ const Contador = ({ stock, onAdd }) => {
         }
     };
 
-    const reset = () => {
-        setCantidad(0);
-    };
-
     const agregar = () => onAdd(cantidad);
 
     return (
@@ -29,7 +25,6 @@ const Contador = ({ stock, onAdd }) => {
             <button disabled={cantidad === stock} onClick={sumar}>
                 +
             </button>
-            <button onClick={reset}>Volver a 0</button>
             <button onClick={agregar}>Agregar al carrito</button>
         </div>
     );
