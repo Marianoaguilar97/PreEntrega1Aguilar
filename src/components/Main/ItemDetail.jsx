@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useState, useContext} from 'react'
+import { CartContext } from '../../Context/CartContext';
 import Contador from './Contador';
 
 
 const ItemDetail = ({item}) => {
     
-    const onAdd = (qty) => console.log(qty);
+    const {addToCart} = useContext(CartContext)
+
+    const onAdd = (qty) => 
+    addToCart(item, qty);
+    
     return (
         <div className='detalle'>
             <img src={item.img} alt={item.title} />
