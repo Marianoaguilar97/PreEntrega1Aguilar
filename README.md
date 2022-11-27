@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Proyecto final de E-Commerce de Mariano Aguilar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es el E-commerce que hice para mi curso de Coder House de React, el mismo estaria basando en una tienda online de productos para el deporte de Kitesurf.
 
-## Available Scripts
+## Link al E-Commerce: [mariano-aguilar-45060-reactjs](https://mariano-aguilar-45060-reactjs.netlify.app/)
 
-In the project directory, you can run:
+## Librerias
 
-### `npm start`
+-[React](https://es.reactjs.org/):
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React te ayuda a crear interfaces de usuario interactivas de forma sencilla. Diseña vistas simples para cada estado en tu aplicación, y React se encargará de actualizar y renderizar de manera eficiente los componentes correctos cuando los datos cambien.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-[React-Router-Dom](https://reactrouter.com/en/main):
 
-### `npm test`
+React Router DOM es un paquete npm que le permite implementar enrutamiento dinámico en una aplicación web. Le permite mostrar páginas y permitir que los usuarios naveguen por ellas. Es una biblioteca de enrutamiento del lado del servidor y del cliente para React.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-[Firebase](https://firebase.google.com/?hl=es):
 
-### `npm run build`
+Firebase es una plataforma digital diseñada para facilitar el desarrollo de aplicaciones web y móviles de calidad de una forma rápida y eficiente, con el objetivo de mejorar el rendimiento de las mismas a través de la implementación de sus distintos módulos que harán que la aplicación sea mucho más manejable, segura y fácil de utilizar para los usuarios.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Lenguajes de logica u otros tipos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-[JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript):
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+JavaScript es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web, (por ejemplo, juegos, eventos que ocurren cuando los botones son presionados o los datos son introducidos en los formularios, efectos de estilo dinámicos, animación, y mucho más).
 
-### `npm run eject`
+-[HTML](https://developer.mozilla.org/es/docs/Web/HTML):
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-[CSS](https://developer.mozilla.org/es/docs/Web/CSS):
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML o XML (en-US) (incluyendo varios languages basados en XML como SVG, MathML o XHTML). CSS describe como debe ser renderizado el elemento estructurado en la pantalla.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Proceso de compra
+![](./public/procesoDeCompra.gif)
 
-## Learn More
+## Pasos para conseguir una copia de mi repositorio
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1. Copiar mi repositoro.
+```
+git clone https://github.com/Marianoaguilar97/ReactJsComisi-n45060Aguilar.git
+```
+### 2. Instalar dependencias
+```
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 3. Correr el proyecto en el navegador
+```
+npm start
+```

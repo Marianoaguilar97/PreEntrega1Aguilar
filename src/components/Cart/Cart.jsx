@@ -13,12 +13,13 @@ const Cart = () => {
         );
 
     return (
-        <div>
+        <div className='carrito'>
             {cart.map((prod) => (
                 <div key={prod.id}>
                     <img src={prod.img} alt={prod.title} width="80px" />
                     <div>
                         <h3>{prod.title}</h3>
+                        <h3>{prod.description}</h3>
                         <h3>{prod.cantidad}</h3>
                         <h3>{prod.price}</h3>
                         <button onClick={() => deleteOne(prod.id)}>
@@ -29,6 +30,7 @@ const Cart = () => {
             ))}
             <h2>Total: {totalPrecio()}$</h2>
             <button onClick={deleteAll}>Vaciar carrito</button>
+            <Link className='finalizarCompra' to={"/checkout"}>Finalizar compra</Link>
         </div>
   );
 };

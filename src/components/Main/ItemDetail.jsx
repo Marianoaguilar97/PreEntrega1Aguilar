@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react'
+import React, {useContext} from 'react'
 import { CartContext } from '../../Context/CartContext';
 import Contador from './Contador';
 
@@ -16,10 +16,7 @@ const ItemDetail = ({item}) => {
             <div className='detalleContenido'>
                 <h2>{item.title}</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Natus optio, necessitatibus iusto odit cupiditate a quae
-                    tempora dolor earum laboriosam hic distinctio. Nemo odit
-                    laboriosam quasi! Temporibus fugit omnis deleniti?
+                {item.description}
                 </p>
                 <h3>${item.price}</h3>
                 <Contador stock={item.stock} onAdd={onAdd} />

@@ -11,6 +11,7 @@
   padding: 20px;
   font-size: 2rem;
   font-weight: bolder;
+  background-color: aquamarine;
 }
 
 .navBar ul {
@@ -35,6 +36,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin: 30px;
+  background-color: rgb(186, 252, 252);
 }
 
 main {
@@ -102,4 +104,18 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  background-color: rgb(186, 252, 252);
+}
+
+.finalizarCompra {
+  color: rgb(133, 30, 12);
+  font-size: large;
+  font-weight: 3000;
 }

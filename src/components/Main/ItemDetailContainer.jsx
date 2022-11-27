@@ -1,23 +1,33 @@
 import React from 'react'
-import { getProduct } from '../../mock/productos';
 import { useState, useEffect } from 'react';
 import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
+import { collection, doc, getDoc } from 'firebase/firestore';
+import { db } from '../../services/firebaseConfig';
 
 const ItemDetailContainer = () => {
     const  [item, setItem] = useState({});
     const [loading, setLoading] = useState(true);
     const {idProd} = useParams();
   
-  useEffect(() => {
-      getProduct(idProd)
-      .then((res) => {
-          setItem(res);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
-}, [idProd]);
+    useEffect(() => {
+      const collectionProd = collection(db, 'productos');
+      const ref = doc(collectionProd, idProd);
+
+      getDoc(ref)
+          .then((res) => {
+              setItem({
+                  id: res.id,
+                  ...res.data(),
+              });
+          })
+          .catch((error) => {
+              console.log(error);
+          })
+          .finally(() => {
+              setLoading(false);
+          });
+  }, [idProd]);
 
 if (loading) {
     return (
